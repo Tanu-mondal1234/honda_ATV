@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Honda ATV Models</title>
+    <link rel="shortcut icon" href="honda logo.jpg" type="image/x-icon">
+<style>
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+}
+
+header .logo img {
+    height: 120px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+main {
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.hero {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.hero h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.tab-menu {
+    margin-bottom: 20px;
+}
+
+.tab-menu button {
+    background-color: #eee;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.tab-menu .active {
+    background-color: #d32f2f;
+    color: white;
+}
+
+.content {
+    position: relative;
+    height: 400px;
+    width: 100%;
+}
+
+.text-section {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 125%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    color: white; 
+    z-index: 2; 
+    background: rgba(0, 0, 0, 0.5); 
+}
+
+.text-section h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.text-section p {
+    margin-bottom: 20px;
+}
+
+.text-section a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.image-section {
+    position:relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 125%;
+
+}
+
+.image-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.atv-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.atv-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+}
+
+.atv-card h3 {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 5px;
+}
+
+.atv-card .trim {
+    background-color: #eee;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.atv-card h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.atv-card .price {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.atv-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.actions a {
+    color: #d32f2f;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+.actions span {
+    color: #777;
+}
+</style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="honda logo.jpg" alt="Honda Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="hero">
+            <h1>Explore all ATV models</h1>
+            <div class="tab-menu">
+                <button>Motorcycle</button>
+                <button class="active">ATV</button>
+                <button>SxS</button>
+            </div>
+            <div class="content">
+                <div class="text-section">
+                    <h2>Rec/Utility</h2>
+                    <p>Honda's FourTrax series of Rec/Utility ATVs are built for work, made for play, and have been trusted by generations. When you're ready for an ATV that can do it all, look no further.</p>
+                    <a href="#">Explore All Rec/Utility ATV models</a>
+                </div>
+                <div class="image-section">
+                    <img src="img.jpg" alt="ATV Rider">
+                </div>
+            </div>
+        </section>
+    </main>
+      <div class="atv-container">
+        <div class="atv-card">
+            <h3>Rec/Utility</h3>
+            <h2>FourTrax Rubicon 4x4</h2>
+            <p class="price">Starting at $9,999</p>
+            <img src="1.jpg" alt="FourTrax Rubicon 4x4">
+            <div class="actions">
+                <a href="#">Explore</a>
+                <span>|</span>
+                <a href="#">Build Your Own</a>
+            </div>
+        </div>
+        <div class="atv-card">
+            <h3>Rec/Utility</h3>
+            <h2>FourTrax Foreman Rubicon 4x4 EPS</h2>
+            <p class="price">Starting at $9,599</p>
+            <img src="2.jpg" alt="FourTrax Foreman Rubicon 4x4 EPS">
+            <div class="actions">
+                <a href="#">Explore</a>
+                <span>|</span>
+                <a href="#">Build Your Own</a>
+            </div>
+        </div>
+        <div class="atv-card">
+            <h3>Rec/Utility</h3>
+            <h2>FourTrax Foreman 4X4</h2>
+            <p class="price">Starting at $8,049</p>
+            <img src="3.jpg" alt="FourTrax Foreman 4X4">
+            <div class="actions">
+                <a href="#">Explore</a>
+                <span>|</span>
+                <a href="#">Build Your Own</a>
+            </div>
+        </div>
+      </div>
+</body>
+</html>
